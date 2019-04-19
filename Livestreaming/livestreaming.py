@@ -60,7 +60,7 @@ class LiveStreaming:
 			print (tweet.created_at, tweet.text)
 			preparedTweetInsert = session.prepare(
 			"""
-			INSERT INTO tweets.tweet_table (tweet)
+			INSERT INTO tweets.tweet_table (UUID,tweet)
 			VALUES (?)
 			""")
 			session.execute(preparedTweetInsert,[tweet.created_at,tweet.text])
