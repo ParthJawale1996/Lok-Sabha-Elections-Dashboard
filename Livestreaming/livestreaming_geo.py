@@ -3,7 +3,7 @@ import codecs
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
-#from cassandra.cluster import Cluster
+from cassandra.cluster import Cluster
 from twython import Twython
 import time
 
