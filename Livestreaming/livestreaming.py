@@ -3,6 +3,8 @@ import codecs
 from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy.streaming import StreamListener
+from cassandra.cluster import Cluster
+
 
 class LiveStreaming:
 
@@ -19,6 +21,7 @@ class LiveStreaming:
 		self.api = self.api_authenticate()
 
 		self.tweet_writer()
+		
 
 
 
@@ -50,10 +53,22 @@ class LiveStreaming:
 		#hashtag = input("Enter #tag here")
 		f = codecs.open('tweet.txt','w',encoding='utf-8')
 
+		cluster = Cluster()
+		session = cluster.connect()
+		
 		for tweet in tweepy.Cursor(self.api.search,q=self.hashtag,count=100,lang="en",since_id=2016-10-11).items():
 			print (tweet.created_at, tweet.text)
+			preparedTweetInsert = session.prepare(
+			"""
+			INSERT INTO tweets.tweet_table (UUID,tweet)
+			VALUES (?)
+			""")
+			session.execute(preparedTweetInsert,[tweet.created_at,tweet.text])
 			f.write("%s,%s\ufeff" %(tweet.created_at, tweet.text))
 		f.close()
+		
+
+
 
 
 if __name__ == '__main__':
