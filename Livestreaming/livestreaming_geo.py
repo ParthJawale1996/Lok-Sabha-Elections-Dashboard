@@ -81,10 +81,10 @@ class LiveStreaming:
 
 			preparedTweetInsert = session.prepare(
 			"""
-			INSERT INTO tweets.tweet_table (UUID,tweet,location)
-			VALUES (?)
+			INSERT INTO tweets.tweet_table (id,tweet,location)
+			VALUES (?,?,?)
 			""")
-			session.execute(preparedTweetInsert,[result['id_str'],result['text'],location])
+			session.execute(preparedTweetInsert,[result['id_str'],result['text'],location)
 
 
 			time.sleep(5)
