@@ -60,36 +60,48 @@ class LiveStreaming:
 		
 
 
-		results = self.api.cursor(self.api.search, q=self.hashtag)
-		#print (len(results))
-		for result in results:
-			#print(result['id_str'])
+		api_list = map(self.set_hastag,self.hashtag)
+		
+		api_conv_list = list(api_list)
+		
+		while True:
+
+			
+			for gen in api_conv_list:
+
+				result = next(gen)
 
 
 			
-			try:
-				location = result['geo']['coordinates']
+				try:
+					location = result['geo']['coordinates']
 
-					
-			except (TypeError, AttributeError):
-
-
-				location = None
-
-			
-			print (result['id_str'],result['text'],location)	
-
-			preparedTweetInsert = session.prepare(
-			"""
-			INSERT INTO tweets.tweet_table (id,tweet,location)
-			VALUES (?,?,?)
-			""")
-			session.execute(preparedTweetInsert,[result['id_str'],result['text'],location])
+						
+				except (TypeError, AttributeError):
 
 
-			time.sleep(5)
+					location = None
+
+				
+				print (result['id_str'],result['text'],location)	
+
+				preparedTweetInsert = session.prepare(
+				"""
+				INSERT INTO tweets.tweet_table (id,tweet,location)
+				VALUES (?,?,?)
+				""")
+				session.execute(preparedTweetInsert,[result['id_str'],result['text'],location])
+
+
+				time.sleep(5)
+
+	
+	def set_hastag(self,hashtag):
 
 		
+
+		return self.api.cursor(self.api.search, q=hashtag)
+	
 
 
 	def tweet_writer(self):
@@ -117,5 +129,5 @@ class LiveStreaming:
 
 if __name__ == '__main__':
 
-	h = '#2019elections'
+	h = ['IPL','election']
 	livestream = LiveStreaming('/home/absu5530/keys.txt',h)
