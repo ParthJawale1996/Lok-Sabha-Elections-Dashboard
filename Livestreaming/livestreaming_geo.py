@@ -129,5 +129,5 @@ class LiveStreaming:
 
 if __name__ == '__main__':
 
-	h = ['IPL','election']
+	h = ['LokSabha','LokSabhaElections','LokSabhaElections2019','Elections2019','GeneralElections','GeneralElections2019']
 	livestream = LiveStreaming('/home/absu5530/keys.txt',h)
