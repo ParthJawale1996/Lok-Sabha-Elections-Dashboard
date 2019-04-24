@@ -80,17 +80,19 @@ class LiveStreaming:
 				except (TypeError, AttributeError):
 
 
-					location = None
+					location = 'N/A'
 
-				
-				print (result['id_str'],result['text'],location)	
+				print (result.keys())
+                                print (result['id_str'],result['text'],result['user']['screen_name'],result['user']['friends_count'],result['user']['followers_count'],result['retweet_count'],result['lang'])	
 
 				preparedTweetInsert = session.prepare(
 				"""
-				INSERT INTO tweets.tweet_table (id,tweet,location)
-				VALUES (?,?,?)
+				INSERT INTO tweets.tweet_table (id,tweet,screen_name,friend_count,followers_count,retweet_count,lang)
+				VALUES (?,?,?,?,?,?,?)
 				""")
-				session.execute(preparedTweetInsert,[result['id_str'],result['text'],location])
+				
+                                if result['lang'] == 'en':
+                                    session.execute(preparedTweetInsert,[result['id_str'],result['text'],result['user']['screen_name'],result['user']['friends_count'],result['user']['followers_count'],result['retweet_count'],result['lang']])
 
 
 				time.sleep(5)
