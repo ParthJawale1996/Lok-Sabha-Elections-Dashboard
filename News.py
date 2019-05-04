@@ -6,8 +6,10 @@
 
 import requests
 import time
-
+from redis_script import * 
 from datetime import datetime
+import redis as Redis
+
 
 def render_headlines():
     
@@ -25,3 +27,15 @@ def render_headlines():
 
     return headlines
 
+headlines_list = render_headlines()
+
+headlines = {}
+
+for i,headline in enumerate(headlines_list):
+    headlines[i] = headline
+
+print(headlines)
+
+rc = redis_cache()
+
+rc.set_redis(headlines, 'headlines')

@@ -100,13 +100,13 @@ bjp_wordcloud = WordCloud(width=1600, height=800, max_font_size=200).generate(st
 mplt.figure(figsize=(12, 10))
 mplt.imshow(bjp_wordcloud, interpolation="bilinear")
 mplt.axis("off")
-mplt.savefig('static/img/bjp_wordcloud.png')
+mplt.savefig('bjp_wordcloud.png')
 
 non_bjp_wordcloud = WordCloud(width=1600, height=800, max_font_size=200).generate(str(non_bjp_tweets))
 mplt.figure(figsize=(12, 10))
 mplt.imshow(non_bjp_wordcloud, interpolation="bilinear")
 mplt.axis("off")
-mplt.savefig('static/img/non_bjp_wordcloud.png')
+mplt.savefig('non_bjp_wordcloud.png')
 
 
 

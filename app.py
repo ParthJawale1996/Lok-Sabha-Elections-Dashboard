@@ -12,8 +12,13 @@ r = redis_cache()
 
 
 top_topics = r.get_redis('top_topics')
+names_and_sentiments = r.get_redis('names_and_sentiments')
+headlines = r.get_redis('headlines')
 
 print(top_topics)
+print(names_and_sentiments)
+print(headlines)
+
 total_docs = 0
 news_headlines = {'headline1', 'headline2'}
 for k,v in top_topics.items():
