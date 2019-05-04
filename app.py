@@ -3,10 +3,16 @@ import os
 from flask import Flask, Response
 from flask import render_template, redirect
 
+from redis_script import *
+
 
 app = Flask(__name__)
 
-top_topics = {'bjp':{'sentiment': 0.02, 'length': 320}, 'loksabha': {'sentiment': 0.42, 'length': 555}}
+r = redis_cache()
+
+
+top_topics = r.get_redis('top_topics')
+print(top_topics)
 total_docs = 0
 news_headlines = {'headline1', 'headline2'}
 for k,v in top_topics.items():
