@@ -3,9 +3,6 @@ import nltk
 import json
 from textblob import TextBlob
 import numpy as np
-json1_file = open('mcbc.json')
-json1_str = json1_file.read()
-json1_data = json.loads(json1_str)
 from redis_script import *
 
 es = Elasticsearch()
