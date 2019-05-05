@@ -4,68 +4,79 @@
       {
          "name": "Narendra Modi",
          "affiliation": "BJP",
+         "state": "Gujarat"
       },
 
       {
          "name": "Rahul Gandhi",
-         "language": "Indian National Congress",
+         "affiliation": "Indian National Congress",
+         "state": "Uttar Pradesh"
       },
 
       {
          "name": "Sitaram Yechury",
          "affiliation": "Communist Party of India",
+         "state":"West Bengal"
       },
 
       {
          "name": "Arvind Kejriwal",
-         "language": "Aam Aadmi Party",
+         "affiliation": "Aam Aadmi Party",
+         "state":"Uttar Pradesh"
       },
 
       {
          "name": "Devendra Fadnavis",
          "affiliation": "BJP",
+         "state":"Maharashtra"
       },
 
       {
          "name": "Amit Shah",
-         "language": "BJP",
+         "affiliation": "BJP",
+         "state":"Gujarat"
       },
 
       {
          "name": "Priyanka Gandhi",
          "affiliation": "Indian National Congress",
+         "state":"Uttar Pradesh"
       },
 
       {
          "name": "Chandrababu Naidu",
-         "language": "Telugu Desam Party",
+         "affiliation": "Telugu Desam Party",
+         "state":"Andhra Pradesh"
       },
 
       {
          "name": "Mayawati",
          "affiliation": "Bahujan Samaj Party",
+         "state": "Uttar Pradesh"
       },
 
       {
          "name": "Nitish Kumar",
-         "language": "Janata Dal",
+         "affiliation": "Janata Dal",
+         "state": "Bihar"
       },
 
       {
          "name": "Sushma Swaraj",
-         "language": "BJP",
+         "affiliation": "BJP",
+         "state": "Punjab"
       },
 
       {
          "name": "Smriti Irani",
-         "language": "BJP",
+         "affiliation": "BJP",
+         "state": "Gujarat"
       },
 
       {
          "name": "Yogi Adityanath",
-         "language": "BJP",
+         "affiliation": "BJP",
+         "state": "Uttar Pradesh"
       }
-
-
    ]
 }
