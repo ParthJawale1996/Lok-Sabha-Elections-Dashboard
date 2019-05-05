@@ -73,8 +73,9 @@ for i,s in enumerate(tweets):
 
 topic_sentiment_avgdict = {}
 for k,v in topic_sentiment_dict.items():
+    if k != 'rt':
         # v is the list of grades for student k
-    topic_sentiment_avgdict.update({k: {'average_sentiment' : sum(v)/ float(len(v)),'length' : len(v)}})
+        topic_sentiment_avgdict.update({k: {'average_sentiment' : sum(v)/ float(len(v)),'length' : len(v)}})
 
 print(topic_sentiment_avgdict)
 
@@ -100,13 +101,13 @@ bjp_wordcloud = WordCloud(width=1600, height=800, max_font_size=200).generate(st
 mplt.figure(figsize=(12, 10))
 mplt.imshow(bjp_wordcloud, interpolation="bilinear")
 mplt.axis("off")
-mplt.savefig('static/img/bjp_wordcloud.png')
+mplt.savefig('/home/uabhifn/EarlyWarning-Buffering/static/img/bjp_wordcloud.png')
 
 non_bjp_wordcloud = WordCloud(width=1600, height=800, max_font_size=200).generate(str(non_bjp_tweets))
 mplt.figure(figsize=(12, 10))
 mplt.imshow(non_bjp_wordcloud, interpolation="bilinear")
 mplt.axis("off")
-mplt.savefig('static/img/non_bjp_wordcloud.png')
+mplt.savefig('/home/uabhifn/EarlyWarning-Buffering/static/img/non_bjp_wordcloud.png')
 
 
 

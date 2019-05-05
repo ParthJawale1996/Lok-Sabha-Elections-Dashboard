@@ -15,8 +15,8 @@ class redis_cache:
         return zip_longest(*args)
 
 
-    def clean_redis_cache(self):
-        for keybatch in self.r.scan_iter():
+    def clean_redis_cache(self,dict_id):
+        for keybatch in self.r.scan_iter(match=dict_id):
             self.r.delete(keybatch)
 
 
@@ -35,7 +35,7 @@ class redis_cache:
     def set_redis(self,data_dict,dict_id):
         
         rval = json.dumps(data_dict)     
-        self.clean_redis_cache()
+        self.clean_redis_cache(dict_id)
         
         self.r.set(dict_id,rval)
     
@@ -50,7 +50,23 @@ class redis_cache:
 
 
 
+if __name__ == '__main__':
 
+
+
+
+    dict1 = {"Hello":2,"Nll":3}
+
+    r = redis_cache()
+
+   # r.set_redis(dict1,"A")
+
+
+    
+    n = r.get_redis("A")
+    n = r.get_redis("b")
+
+    print (n)
 
 
 
