@@ -23,7 +23,7 @@
 <body id="page-top">
 
   <!-- Page Wrapper -->
-  <div id="wrapper">
+  <div id="wrapper" class="scroll-container">
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -56,27 +56,27 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="#ticker" data-toggle="tab" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link" href="#ticker" aria-expanded="true" aria-controls="ticker">
           <span>Trending</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="tab" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link" href="#primFig" aria-expanded="true" aria-controls="primFig">
           <span>Primary Figures</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="tab" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link scroll-page" href="#wordCloud" aria-expanded="true" aria-controls="wordCloud">
           <span>Word Cloud</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="tab" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link scroll-page" href="#topicModel" aria-expanded="true" aria-controls="topicModel">
           <span>Most Discussed Topics</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#livestream" data-toggle="tab" role="tab" aria-expanded="true" aria-controls="livestream">
+        <a class="nav-link scroll-page" href="#livestream" aria-expanded="true" aria-controls="livestream">
           <span>Election Results Tweets</span>
         </a>
       </li>
@@ -138,7 +138,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div id="primFig" class="row">
             <div class="col-xl-8 col-lg-7">
               <!-- Political Figures-->
               <div class="card border-left-warning shadow mb-4">
@@ -198,7 +198,7 @@
           </div>
 
           <!-- Content Row -->
-          <div class="row">
+          <div id="wordCloud" class="row">
             <div class="col-xl-6 col-lg-7">
               <!-- Political Figures-->
               <div class="card shadow mb-4">
@@ -224,8 +224,7 @@
             </div>
           </div>
 
-          <div class="row">
-
+          <div id="topicModel" class="row">
             <!-- Area Chart -->
             <div class="col-xl-12 col-lg-7">
               <!-- Project Card Example -->
@@ -262,17 +261,9 @@
 
                   <a class="twitter-timeline" data-width="50%" data-height="400" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/india_elections?ref_src=twsrc%5Etfw">india_elections</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
-
-
               </div>
             </div>            
           </div>
-
-          
-          
-
-
-
 
         </div>
         <!-- /.container-fluid -->
@@ -303,7 +294,20 @@
 
 
 
+  <!-- Css Styles-->
+  <style type="text/css">
+    .scroll-container {
+      display: block;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
 
+    .scroll-page {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 
   <!-- Bootstrap core JavaScript-->
   <script src="static/vendor/jquery/jquery.min.js"></script>
