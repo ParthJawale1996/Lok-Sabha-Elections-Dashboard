@@ -1,0 +1,71 @@
+{
+   "politicians": [
+
+      {
+         "name": "Narendra Modi",
+         "affiliation": "BJP",
+      },
+
+      {
+         "name": "Rahul Gandhi",
+         "language": "Indian National Congress",
+      },
+
+      {
+         "name": "Sitaram Yechury",
+         "affiliation": "Communist Party of India",
+      },
+
+      {
+         "name": "Arvind Kejriwal",
+         "language": "Aam Aadmi Party",
+      },
+
+      {
+         "name": "Devendra Fadnavis",
+         "affiliation": "BJP",
+      },
+
+      {
+         "name": "Amit Shah",
+         "language": "BJP",
+      },
+
+      {
+         "name": "Priyanka Gandhi",
+         "affiliation": "Indian National Congress",
+      },
+
+      {
+         "name": "Chandrababu Naidu",
+         "language": "Telugu Desam Party",
+      },
+
+      {
+         "name": "Mayawati",
+         "affiliation": "Bahujan Samaj Party",
+      },
+
+      {
+         "name": "Nitish Kumar",
+         "language": "Janata Dal",
+      },
+
+      {
+         "name": "Sushma Swaraj",
+         "language": "BJP",
+      },
+
+      {
+         "name": "Smriti Irani",
+         "language": "BJP",
+      },
+
+      {
+         "name": "Yogi Adityanath",
+         "language": "BJP",
+      }
+
+
+   ]
+}
