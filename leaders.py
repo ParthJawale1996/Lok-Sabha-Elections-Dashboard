@@ -7,7 +7,7 @@ from redis_script import *
 
 es = Elasticsearch()
 
-names = {'Narendra Modi' : ['@PMOIndia','@NarendraModi'], 'Rahul Gandhi' : ['@RahulGandhi'], 'Sitaram Yechury': ['@SitaramYechury'], 'Mamata Banerjee': ['@MamataOfficial'], 'M. K. Stalin': ['@MKStalin'], 'Arvind Kejriwal' : ['@ArvindKejriwal'], 'Shashi Tharoor' : ['@ShashiTharoor'], 'Devendra Fadnavis' : ['@Dev_Fadnavis'], 'Owaisi' : ['@AsadOwaisi'], 'Amit Shah' : ['@AmitShah'], 'Priyanka Gandhi' : ['@PriyankaGandhi'], 'Chandrababu Naidu' : ['@ncbn'], 'Mayawati' : ['@Mayawati'], 'Nitish Kumar': ['@NitishKumar'], 'Nirmala Sitharaman' : ['@NirmalaSitharaman'], 'Sushma Swaraj' : ['@SushmaSwaraj'], 'Smriti Irani' : ['@SmritiIrani'], 'Yogi Adityanath' : ['@MYogiAdityanath']}
+names = {'Narendra Modi' : ['@PMOIndia','@NarendraModi'], 'Rahul Gandhi' : ['@RahulGandhi'], 'Sitaram Yechury': ['@SitaramYechury'], 'Mamata Banerjee': ['@MamataOfficial'], 'Arvind Kejriwal' : ['@ArvindKejriwal'], 'Shashi Tharoor' : ['@ShashiTharoor'], 'Devendra Fadnavis' : ['@Dev_Fadnavis'], 'Amit Shah' : ['@AmitShah'], 'Priyanka Gandhi' : ['@PriyankaGandhi'], 'Chandrababu Naidu' : ['@ncbn'], 'Mayawati' : ['@Mayawati'], 'Nitish Kumar': ['@NitishKumar'], 'Sushma Swaraj' : ['@SushmaSwaraj'], 'Smriti Irani' : ['@SmritiIrani'], 'Yogi Adityanath' : ['@MYogiAdityanath']}
 
 names_and_sentiments = {}
 

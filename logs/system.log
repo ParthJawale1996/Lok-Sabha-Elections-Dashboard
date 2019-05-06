@@ -1,0 +1,501 @@
+2019-05-01 09:28:26,793 INFO  [main] YamlConfigurationLoader.java:89 getStorageConfigURL Configuration location: file:/etc/cassandra/cassandra.yaml
+2019-05-01 09:28:27,174 INFO  [main] Config.java:496 log Node configuration:[allocate_tokens_for_keyspace=null; authenticator=AllowAllAuthenticator; authorizer=AllowAllAuthorizer; auto_bootstrap=true; auto_snapshot=true; back_pressure_enabled=false; back_pressure_strategy=null; batch_size_fail_threshold_in_kb=50; batch_size_warn_threshold_in_kb=5; batchlog_replay_throttle_in_kb=1024; broadcast_address=null; broadcast_rpc_address=null; buffer_pool_use_heap_if_exhausted=true; cas_contention_timeout_in_ms=5000; cdc_enabled=false; cdc_free_space_check_interval_ms=250; cdc_raw_directory=null; cdc_total_space_in_mb=0; client_encryption_options=<REDACTED>; cluster_name=Test Cluster; column_index_cache_size_in_kb=2; column_index_size_in_kb=64; commit_failure_policy=stop; commitlog_compression=null; commitlog_directory=null; commitlog_max_compression_buffers_in_pool=3; commitlog_periodic_queue_size=-1; commitlog_segment_size_in_mb=32; commitlog_sync=periodic; commitlog_sync_batch_window_in_ms=NaN; commitlog_sync_period_in_ms=10000; commitlog_total_space_in_mb=null; compaction_large_partition_warning_threshold_mb=100; compaction_throughput_mb_per_sec=16; concurrent_compactors=null; concurrent_counter_writes=32; concurrent_materialized_view_writes=32; concurrent_reads=32; concurrent_replicates=null; concurrent_writes=32; counter_cache_keys_to_save=2147483647; counter_cache_save_period=7200; counter_cache_size_in_mb=null; counter_write_request_timeout_in_ms=5000; credentials_cache_max_entries=1000; credentials_update_interval_in_ms=-1; credentials_validity_in_ms=2000; cross_node_timeout=false; data_file_directories=[Ljava.lang.String;@96def03; disk_access_mode=auto; disk_failure_policy=stop; disk_optimization_estimate_percentile=0.95; disk_optimization_page_cross_chance=0.1; disk_optimization_strategy=ssd; dynamic_snitch=true; dynamic_snitch_badness_threshold=0.1; dynamic_snitch_reset_interval_in_ms=600000; dynamic_snitch_update_interval_in_ms=100; enable_materialized_views=true; enable_scripted_user_defined_functions=false; enable_user_defined_functions=false; enable_user_defined_functions_threads=true; encryption_options=null; endpoint_snitch=GossipingPropertyFileSnitch; file_cache_round_up=null; file_cache_size_in_mb=null; gc_log_threshold_in_ms=200; gc_warn_threshold_in_ms=1000; hinted_handoff_disabled_datacenters=[]; hinted_handoff_enabled=true; hinted_handoff_throttle_in_kb=1024; hints_compression=null; hints_directory=null; hints_flush_period_in_ms=10000; incremental_backups=false; index_interval=null; index_summary_capacity_in_mb=null; index_summary_resize_interval_in_minutes=60; initial_token=null; inter_dc_stream_throughput_outbound_megabits_per_sec=200; inter_dc_tcp_nodelay=false; internode_authenticator=null; internode_compression=all; internode_recv_buff_size_in_bytes=0; internode_send_buff_size_in_bytes=0; key_cache_keys_to_save=2147483647; key_cache_save_period=14400; key_cache_size_in_mb=null; listen_address=localhost; listen_interface=null; listen_interface_prefer_ipv6=false; listen_on_broadcast_address=false; max_hint_window_in_ms=10800000; max_hints_delivery_threads=2; max_hints_file_size_in_mb=128; max_mutation_size_in_kb=null; max_streaming_retries=3; max_value_size_in_mb=256; memtable_allocation_type=heap_buffers; memtable_cleanup_threshold=null; memtable_flush_writers=0; memtable_heap_space_in_mb=null; memtable_offheap_space_in_mb=null; min_free_space_per_drive_in_mb=50; native_transport_flush_in_batches_legacy=true; native_transport_max_concurrent_connections=-1; native_transport_max_concurrent_connections_per_ip=-1; native_transport_max_frame_size_in_mb=256; native_transport_max_threads=128; native_transport_port=9042; native_transport_port_ssl=null; num_tokens=8; otc_backlog_expiration_interval_ms=200; otc_coalescing_enough_coalesced_messages=8; otc_coalescing_strategy=DISABLED; otc_coalescing_window_us=200; partitioner=org.apache.cassandra.dht.Murmur3Partitioner; permissions_cache_max_entries=1000; permissions_update_interval_in_ms=-1; permissions_validity_in_ms=2000; phi_convict_threshold=8.0; prepared_statements_cache_size_mb=null; range_request_timeout_in_ms=10000; read_request_timeout_in_ms=5000; request_scheduler=org.apache.cassandra.scheduler.NoScheduler; request_scheduler_id=null; request_scheduler_options=null; request_timeout_in_ms=10000; role_manager=CassandraRoleManager; roles_cache_max_entries=1000; roles_update_interval_in_ms=-1; roles_validity_in_ms=2000; row_cache_class_name=org.apache.cassandra.cache.OHCProvider; row_cache_keys_to_save=2147483647; row_cache_save_period=0; row_cache_size_in_mb=0; rpc_address=localhost; rpc_interface=null; rpc_interface_prefer_ipv6=false; rpc_keepalive=true; rpc_listen_backlog=50; rpc_max_threads=2147483647; rpc_min_threads=16; rpc_port=9160; rpc_recv_buff_size_in_bytes=null; rpc_send_buff_size_in_bytes=null; rpc_server_type=sync; saved_caches_directory=null; seed_provider=org.apache.cassandra.locator.SimpleSeedProvider{seeds=127.0.0.1}; server_encryption_options=<REDACTED>; slow_query_log_timeout_in_ms=500; snapshot_before_compaction=false; ssl_storage_port=7001; sstable_preemptive_open_interval_in_mb=50; start_native_transport=true; start_rpc=false; storage_port=7000; stream_throughput_outbound_megabits_per_sec=200; streaming_keep_alive_period_in_secs=300; streaming_socket_timeout_in_ms=86400000; thrift_framed_transport_size_in_mb=15; thrift_max_message_length_in_mb=16; thrift_prepared_statements_cache_size_mb=null; tombstone_failure_threshold=100000; tombstone_warn_threshold=1000; tracetype_query_ttl=86400; tracetype_repair_ttl=604800; transparent_data_encryption_options=org.apache.cassandra.config.TransparentDataEncryptionOptions@5ccddd20; trickle_fsync=false; trickle_fsync_interval_in_kb=10240; truncate_request_timeout_in_ms=60000; unlogged_batch_across_partitions_warn_threshold=10; user_defined_function_fail_timeout=1500; user_defined_function_warn_timeout=500; user_function_timeout_policy=die; windows_timer_interval=1; write_request_timeout_in_ms=5000]
+2019-05-01 09:28:27,176 INFO  [main] DatabaseDescriptor.java:373 applySimpleConfig DiskAccessMode 'auto' determined to be mmap, indexAccessMode is mmap
+2019-05-01 09:28:27,177 INFO  [main] DatabaseDescriptor.java:431 applySimpleConfig Global memtable on-heap threshold is enabled at 462MB
+2019-05-01 09:28:27,178 INFO  [main] DatabaseDescriptor.java:435 applySimpleConfig Global memtable off-heap threshold is enabled at 462MB
+2019-05-01 09:28:27,188 WARN  [main] DatabaseDescriptor.java:480 applySimpleConfig Small commitlog volume detected at /var/lib/cassandra/commitlog; setting commitlog_total_space_in_mb to 2437.  You can override this in cassandra.yaml
+2019-05-01 09:28:27,189 WARN  [main] DatabaseDescriptor.java:507 applySimpleConfig Small cdc volume detected at /var/lib/cassandra/cdc_raw; setting cdc_total_space_in_mb to 1218.  You can override this in cassandra.yaml
+2019-05-01 09:28:27,356 WARN  [main] DatabaseDescriptor.java:556 applySimpleConfig Only 7.298GiB free across all data volumes. Consider adding more capacity to your cluster or removing obsolete snapshots
+2019-05-01 09:28:27,401 INFO  [main] RateBasedBackPressure.java:123 <init> Initialized back-pressure with high ratio: 0.9, factor: 5, flow: FAST, window size: 5000.
+2019-05-01 09:28:27,408 INFO  [main] DatabaseDescriptor.java:735 applySimpleConfig Back-pressure is disabled with strategy null.
+2019-05-01 09:28:27,597 INFO  [main] GossipingPropertyFileSnitch.java:64 <init> Loaded cassandra-topology.properties for compatibility
+2019-05-01 09:28:28,187 INFO  [main] NativeLibrary.java:174 tryMlockall JNA mlockall successful
+2019-05-01 09:28:28,431 WARN  [main] Node.java:549 warnIfPreRelease version [6.2.3-SNAPSHOT] is a pre-release version of Elasticsearch and is not suitable for production
+2019-05-01 09:28:30,852 INFO  [main] QueryProcessor.java:116 <clinit> Initialized prepared statement caches with 10 MB (native) and 10 MB (Thrift)
+2019-05-01 09:28:31,513 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.IndexInfo
+2019-05-01 09:28:32,248 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.batches
+2019-05-01 09:28:32,255 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.paxos
+2019-05-01 09:28:32,267 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.local
+2019-05-01 09:28:32,274 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.peers
+2019-05-01 09:28:32,280 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.peer_events
+2019-05-01 09:28:32,286 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.range_xfers
+2019-05-01 09:28:32,297 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.compaction_history
+2019-05-01 09:28:32,303 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.sstable_activity
+2019-05-01 09:28:32,326 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.size_estimates
+2019-05-01 09:28:32,332 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.available_ranges
+2019-05-01 09:28:32,347 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.transferred_ranges
+2019-05-01 09:28:32,358 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.views_builds_in_progress
+2019-05-01 09:28:32,367 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.built_views
+2019-05-01 09:28:32,380 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.hints
+2019-05-01 09:28:32,388 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.batchlog
+2019-05-01 09:28:32,395 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.prepared_statements
+2019-05-01 09:28:32,402 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_keyspaces
+2019-05-01 09:28:32,409 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_columnfamilies
+2019-05-01 09:28:32,415 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_columns
+2019-05-01 09:28:32,420 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_triggers
+2019-05-01 09:28:32,426 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_usertypes
+2019-05-01 09:28:32,434 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_functions
+2019-05-01 09:28:32,446 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system.schema_aggregates
+2019-05-01 09:28:32,448 INFO  [main] ViewManager.java:137 reload Not submitting build tasks for views in keyspace system as storage service is not initialized
+2019-05-01 09:28:32,507 INFO  [main] ApproximateTime.java:44 <clinit> Scheduling approximate time-check task with a precision of 10 milliseconds
+2019-05-01 09:28:32,529 WARN  [main] SystemKeyspace.java:1087 getLocalHostId No host ID found, created ebc0437f-bda6-451a-bacc-c7c09740cfd0 (Note: This should happen exactly once per node).
+2019-05-01 09:28:32,607 INFO  [ScheduledTasks:1] TokenMetadata.java:517 updateTopology Updating topology for all endpoints that have changed
+2019-05-01 09:28:37,435 INFO  [main] JMXServerUtils.java:246 logJmxServiceUrl Configured JMX server at: service:jmx:rmi://127.0.0.1/jndi/rmi://127.0.0.1:7199/jmxrmi
+2019-05-01 09:28:37,443 INFO  [main] CassandraDaemon.java:484 logSystemInfo Hostname: instance-2.us-east1-b.c.chrome-horizon-239308.internal
+2019-05-01 09:28:37,444 INFO  [main] CassandraDaemon.java:491 logSystemInfo JVM vendor/version: OpenJDK 64-Bit Server VM/1.8.0_212
+2019-05-01 09:28:37,445 INFO  [main] CassandraDaemon.java:492 logSystemInfo Heap size: 1.805GiB/1.805GiB
+2019-05-01 09:28:37,445 INFO  [main] CassandraDaemon.java:497 logSystemInfo Code Cache Non-heap memory: init = 2555904(2496K) used = 11021312(10763K) committed = 11337728(11072K) max = 251658240(245760K)
+2019-05-01 09:28:37,445 INFO  [main] CassandraDaemon.java:497 logSystemInfo Metaspace Non-heap memory: init = 0(0K) used = 56824984(55493K) committed = 60579840(59160K) max = -1(-1K)
+2019-05-01 09:28:37,446 INFO  [main] CassandraDaemon.java:497 logSystemInfo Compressed Class Space Non-heap memory: init = 0(0K) used = 7451704(7277K) committed = 8814592(8608K) max = 1073741824(1048576K)
+2019-05-01 09:28:37,446 INFO  [main] CassandraDaemon.java:497 logSystemInfo Par Eden Space Heap memory: init = 167772160(163840K) used = 167772160(163840K) committed = 167772160(163840K) max = 167772160(163840K)
+2019-05-01 09:28:37,446 INFO  [main] CassandraDaemon.java:497 logSystemInfo Par Survivor Space Heap memory: init = 20971520(20480K) used = 20971520(20480K) committed = 20971520(20480K) max = 20971520(20480K)
+2019-05-01 09:28:37,446 INFO  [main] CassandraDaemon.java:497 logSystemInfo CMS Old Gen Heap memory: init = 1749024768(1708032K) used = 25079328(24491K) committed = 1749024768(1708032K) max = 1749024768(1708032K)
+2019-05-01 09:28:37,446 INFO  [main] CassandraDaemon.java:499 logSystemInfo Classpath: /etc/cassandra:/usr/share/cassandra/lib/HdrHistogram-2.1.9.jar:/usr/share/cassandra/lib/ST4-4.0.8.jar:/usr/share/cassandra/lib/airline-0.6.jar:/usr/share/cassandra/lib/ant-1.7.0.jar:/usr/share/cassandra/lib/ant-launcher-1.7.0.jar:/usr/share/cassandra/lib/antlr-3.5.2.jar:/usr/share/cassandra/lib/antlr-runtime-3.5.2.jar:/usr/share/cassandra/lib/caffeine-2.2.6.jar:/usr/share/cassandra/lib/cassandra-all-3.11.4.jar:/usr/share/cassandra/lib/cassandra-driver-core-3.0.1-shaded.jar:/usr/share/cassandra/lib/cassandra-thrift-3.11.4.jar:/usr/share/cassandra/lib/commons-cli-1.3.1.jar:/usr/share/cassandra/lib/commons-codec-1.10.jar:/usr/share/cassandra/lib/commons-lang3-3.4.jar:/usr/share/cassandra/lib/commons-logging-1.2.jar:/usr/share/cassandra/lib/commons-math3-3.2.jar:/usr/share/cassandra/lib/compress-lzf-0.8.4.jar:/usr/share/cassandra/lib/concurrent-trees-2.4.0.jar:/usr/share/cassandra/lib/concurrentlinkedhashmap-lru-1.4.jar:/usr/share/cassandra/lib/disruptor-3.0.1.jar:/usr/share/cassandra/lib/ecj-4.4.2.jar:/usr/share/cassandra/lib/elasticsearch-6.2.3.14.jar:/usr/share/cassandra/lib/elasticsearch-cli-6.2.3.14.jar:/usr/share/cassandra/lib/elasticsearch-core-6.2.3.14.jar:/usr/share/cassandra/lib/elasticsearch-launchers-6.2.3.14.jar:/usr/share/cassandra/lib/fastutil-6.5.7.jar:/usr/share/cassandra/lib/guava-19.0.jar:/usr/share/cassandra/lib/hibernate-validator-4.3.0.Final.jar:/usr/share/cassandra/lib/high-scale-lib-1.0.6.jar:/usr/share/cassandra/lib/hppc-0.7.1.jar:/usr/share/cassandra/lib/httpclient-4.5.2.jar:/usr/share/cassandra/lib/httpcore-4.4.5.jar:/usr/share/cassandra/lib/jackson-core-2.8.10.jar:/usr/share/cassandra/lib/jackson-core-asl-1.9.13.jar:/usr/share/cassandra/lib/jackson-dataformat-cbor-2.8.10.jar:/usr/share/cassandra/lib/jackson-dataformat-smile-2.8.10.jar:/usr/share/cassandra/lib/jackson-dataformat-yaml-2.8.10.jar:/usr/share/cassandra/lib/jackson-mapper-asl-1.9.13.jar:/usr/share/cassandra/lib/javassist-3.20.0-GA.jar:/usr/share/cassandra/lib/javax.inject-1.jar:/usr/share/cassandra/lib/jbcrypt-0.3m.jar:/usr/share/cassandra/lib/jboss-logging-3.1.0.CR2.jar:/usr/share/cassandra/lib/jcl-over-slf4j-1.7.7.jar:/usr/share/cassandra/lib/jctools-core-1.2.1.jar:/usr/share/cassandra/lib/jflex-1.6.0.jar:/usr/share/cassandra/lib/jna-4.5.1.jar:/usr/share/cassandra/lib/joda-time-2.9.9.jar:/usr/share/cassandra/lib/jopt-simple-5.0.2.jar:/usr/share/cassandra/lib/json-simple-1.1.jar:/usr/share/cassandra/lib/jts-1.13.jar:/usr/share/cassandra/lib/libthrift-0.9.2.jar:/usr/share/cassandra/lib/log4j-api-2.9.1.jar:/usr/share/cassandra/lib/log4j-core-2.9.1.jar:/usr/share/cassandra/lib/log4j-over-slf4j-1.7.7.jar:/usr/share/cassandra/lib/log4j-to-slf4j-2.9.1.jar:/usr/share/cassandra/lib/logback-classic-1.1.8.jar:/usr/share/cassandra/lib/logback-core-1.1.8.jar:/usr/share/cassandra/lib/lucene-analyzers-common-7.2.1.jar:/usr/share/cassandra/lib/lucene-backward-codecs-7.2.1.jar:/usr/share/cassandra/lib/lucene-core-7.2.1.jar:/usr/share/cassandra/lib/lucene-grouping-7.2.1.jar:/usr/share/cassandra/lib/lucene-highlighter-7.2.1.jar:/usr/share/cassandra/lib/lucene-join-7.2.1.jar:/usr/share/cassandra/lib/lucene-memory-7.2.1.jar:/usr/share/cassandra/lib/lucene-misc-7.2.1.jar:/usr/share/cassandra/lib/lucene-queries-7.2.1.jar:/usr/share/cassandra/lib/lucene-queryparser-7.2.1.jar:/usr/share/cassandra/lib/lucene-sandbox-7.2.1.jar:/usr/share/cassandra/lib/lucene-spatial-7.2.1.jar:/usr/share/cassandra/lib/lucene-spatial-extras-7.2.1.jar:/usr/share/cassandra/lib/lucene-spatial3d-7.2.1.jar:/usr/share/cassandra/lib/lucene-suggest-7.2.1.jar:/usr/share/cassandra/lib/lz4-1.3.0.jar:/usr/share/cassandra/lib/metrics-core-3.1.0.jar:/usr/share/cassandra/lib/metrics-jvm-3.1.5.jar:/usr/share/cassandra/lib/netty-all-4.1.16.Final.jar:/usr/share/cassandra/lib/ohc-core-0.4.4.jar:/usr/share/cassandra/lib/ohc-core-j8-0.4.4.jar:/usr/share/cassandra/lib/plugin-classloader-6.2.3.14.jar:/usr/share/cassandra/lib/plugin-cli-6.2.3.14.jar:/usr/share/cassandra/lib/reporter-config-base-3.0.3.jar:/usr/share/cassandra/lib/reporter-config3-3.0.3.jar:/usr/share/cassandra/lib/securesm-1.2.jar:/usr/share/cassandra/lib/sigar-1.6.4.jar:/usr/share/cassandra/lib/slf4j-api-1.7.25.jar:/usr/share/cassandra/lib/snakeyaml-1.17.jar:/usr/share/cassandra/lib/snappy-java-1.1.1.7.jar:/usr/share/cassandra/lib/spatial4j-0.6.jar:/usr/share/cassandra/lib/stream-2.5.2.jar:/usr/share/cassandra/lib/t-digest-3.0.jar:/usr/share/cassandra/lib/thrift-server-0.3.7.jar:/usr/share/cassandra/lib/validation-api-1.0.0.GA.jar:/usr/share/cassandra/lib/jamm-0.3.0.jar
+2019-05-01 09:28:37,447 INFO  [main] CassandraDaemon.java:501 logSystemInfo JVM Arguments: [-Djava.library.path=/usr/share/cassandra/lib/sigar-bin, -Xloggc:/var/log/cassandra/gc.log, -ea, -XX:+UseThreadPriorities, -XX:ThreadPriorityPolicy=42, -XX:+HeapDumpOnOutOfMemoryError, -XX:StringTableSize=1000003, -XX:+AlwaysPreTouch, -XX:-UseBiasedLocking, -XX:+UseTLAB, -XX:+ResizeTLAB, -XX:+UseNUMA, -XX:+PerfDisableSharedMem, -Djava.net.preferIPv4Stack=true, -XX:+UseParNewGC, -XX:+UseConcMarkSweepGC, -XX:+CMSParallelRemarkEnabled, -XX:SurvivorRatio=8, -XX:MaxTenuringThreshold=1, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:CMSWaitDuration=10000, -XX:+CMSParallelInitialMarkEnabled, -XX:+CMSEdenChunksRecordAlways, -XX:+CMSClassUnloadingEnabled, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintHeapAtGC, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -XX:+PrintPromotionFailure, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=10, -XX:GCLogFileSize=10M, -Xss1m, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Xms1867M, -Xmx1867M, -Xmn200M, -XX:CompileCommandFile=/etc/cassandra/hotspot_compiler, -javaagent:/usr/share/cassandra/lib/jamm-0.3.0.jar, -Dcassandra.jmx.local.port=7199, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.password.file=/etc/cassandra/jmxremote.password, -Djava.library.path=/usr/share/cassandra/lib/sigar-bin, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -Djava.awt.headless=true, -Dlogback.configurationFile=/etc/cassandra/logback.xml, -Dcassandra.logdir=/var/log/cassandra, -Dcassandra.storagedir=/var/lib/cassandra, -Dcassandra-pidfile=/var/run/cassandra/cassandra.pid]
+2019-05-01 09:28:37,555 INFO  [main] NativeLibrary.java:174 tryMlockall JNA mlockall successful
+2019-05-01 09:28:37,556 WARN  [main] StartupChecks.java:136 execute jemalloc shared library could not be preloaded to speed up memory allocations
+2019-05-01 09:28:37,556 WARN  [main] StartupChecks.java:169 execute JMX is not enabled to receive remote connections. Please see cassandra-env.sh for more info.
+2019-05-01 09:28:37,557 WARN  [main] StartupChecks.java:220 checkOutOfMemoryHandling The JVM is not configured to stop on OutOfMemoryError which can cause data corruption. Use one of the following JVM options to configure the behavior on OutOfMemoryError:  -XX:+ExitOnOutOfMemoryError, -XX:+CrashOnOutOfMemoryError, or -XX:OnOutOfMemoryError="<cmd args>;<cmd args>"
+2019-05-01 09:28:37,559 INFO  [main] SigarLibrary.java:44 <init> Initializing SIGAR library
+2019-05-01 09:28:37,571 INFO  [main] SigarLibrary.java:180 warnIfRunningInDegradedMode Checked OS settings and found them configured for optimal performance.
+2019-05-01 09:28:37,610 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.keyspaces
+2019-05-01 09:28:37,618 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.tables
+2019-05-01 09:28:37,625 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.columns
+2019-05-01 09:28:37,631 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.triggers
+2019-05-01 09:28:37,637 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.dropped_columns
+2019-05-01 09:28:37,643 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.views
+2019-05-01 09:28:37,648 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.types
+2019-05-01 09:28:37,654 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.functions
+2019-05-01 09:28:37,660 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.aggregates
+2019-05-01 09:28:37,665 INFO  [main] ColumnFamilyStore.java:429 <init> Initializing system_schema.indexes
+2019-05-01 09:28:37,667 INFO  [main] ViewManager.java:137 reload Not submitting build tasks for views in keyspace system_schema as storage service is not initialized
+2019-05-01 09:28:38,225 INFO  [MemtableFlushWriter:1] CacheService.java:100 initKeyCache Initializing key cache with capacity of 92 MBs.
+2019-05-01 09:28:38,235 INFO  [MemtableFlushWriter:1] CacheService.java:122 initRowCache Initializing row cache with capacity of 0 MBs
+2019-05-01 09:28:38,237 INFO  [MemtableFlushWriter:1] CacheService.java:151 initCounterCache Initializing counter cache with capacity of 46 MBs
+2019-05-01 09:28:38,238 INFO  [MemtableFlushWriter:1] CacheService.java:162 initCounterCache Scheduling counter cache save to every 7200 seconds (going to save all keys).
+2019-05-01 09:28:38,421 INFO  [CompactionExecutor:2] BufferPool.java:230 <clinit> Global buffer pool is enabled, when pool is exhausted (max is 462.000MiB) it will allocate on heap
+2019-05-01 09:28:38,508 INFO  [main] StorageService.java:619 populateTokenMetadata Populating token metadata from system tables
+2019-05-01 09:28:38,567 INFO  [main] StorageService.java:626 populateTokenMetadata Token metadata: 
+2019-05-01 09:28:38,624 INFO  [pool-5-thread-1] AutoSavingCache.java:174 run Completed loading (18 ms; 8 keys) KeyCache cache
+2019-05-01 09:28:38,655 INFO  [main] CommitLog.java:142 recoverSegmentsOnDisk No commitlog files found; skipping replay
+2019-05-01 09:28:38,655 INFO  [main] StorageService.java:619 populateTokenMetadata Populating token metadata from system tables
+2019-05-01 09:28:38,677 INFO  [main] StorageService.java:626 populateTokenMetadata Token metadata: 
+2019-05-01 09:28:38,784 INFO  [main] QueryProcessor.java:163 preloadPreparedStatement Preloaded 0 prepared statements
+2019-05-01 09:28:38,785 INFO  [main] StorageService.java:637 initServer Cassandra version: 3.11.4
+2019-05-01 09:28:38,786 INFO  [main] StorageService.java:638 initServer Thrift API version: 20.1.0
+2019-05-01 09:28:38,786 INFO  [main] StorageService.java:639 initServer CQL supported versions: 3.4.4 (default: 3.4.4)
+2019-05-01 09:28:38,787 INFO  [main] StorageService.java:641 initServer Native protocol supported versions: 3/v3, 4/v4, 5/v5-beta (default: 4/v4)
+2019-05-01 09:28:38,828 INFO  [main] IndexSummaryManager.java:80 <init> Initializing index summary manager with a memory pool size of 92 MB and a resize interval of 60 minutes
+2019-05-01 09:28:38,841 INFO  [main] MessagingService.java:750 getServerSockets Starting Messaging Service on localhost/127.0.0.1:7000 (lo)
+2019-05-01 09:28:38,863 INFO  [main] StorageService.java:569 checkForEndpointCollision Unable to gossip with any peers but continuing anyway since node is in its own seed list
+2019-05-01 09:28:38,884 INFO  [main] StorageService.java:723 loadRingState Loading persisted ring state
+2019-05-01 09:28:38,886 INFO  [main] StorageService.java:841 prepareToJoin Starting up server gossip
+2019-05-01 09:28:38,980 INFO  [main] StorageService.java:902 joinTokenRing This node will not auto bootstrap because it is configured to be a seed node.
+2019-05-01 09:28:39,014 INFO  [main] BootStrapper.java:228 getRandomTokens Generated random tokens. tokens are [-3916193392455490775, 4264964358027313302, 2958873445664105576, 5894642364984172311, 1168488326349325412, 1231946753017323173, -2963590988473375843, -5888580554309595347]
+2019-05-01 09:28:39,017 INFO  [main] ElassandraDaemon.java:303 ringReady waiting 30000ms for CQL schema to get the elasticsearch mapping
+2019-05-01 09:29:09,026 INFO  [main] ElassandraDaemon.java:336 activateAndWaitShards Activating Elasticsearch, shards starting with empty elasticsearch mapping
+2019-05-01 09:29:09,228 INFO  [main] ElassandraDaemon.java:339 activateAndWaitShards Elasticsearch shards started, ready to go on.
+2019-05-01 09:29:09,233 INFO  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] CassandraGatewayService.java:141 clusterStateProcessed Recovered [0] indices into cluster_state metadata=ebc0437f-bda6-451a-bacc-c7c09740cfd0/0
+2019-05-01 09:29:09,235 INFO  [main] MigrationManager.java:351 announceNewKeyspace Create new Keyspace: KeyspaceMetadata{name=system_traces, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.SimpleStrategy, replication_factor=2}}, tables=[org.apache.cassandra.config.CFMetaData@28d8ea2c[cfId=c5e99f16-8677-3914-b17e-960613512345,ksName=system_traces,cfName=sessions,flags=[COMPOUND],params=TableParams{comment=tracing sessions, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=0, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [client command coordinator duration request started_at parameters]],partitionKeyColumns=[session_id],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UUIDType,columnMetadata=[client, command, session_id, coordinator, request, started_at, duration, parameters],droppedColumns={},triggers=[],indexes=[]], org.apache.cassandra.config.CFMetaData@76f01cbd[cfId=8826e8e9-e16a-3728-8753-3bc1fc713c25,ksName=system_traces,cfName=events,flags=[COMPOUND],params=TableParams{comment=tracing events, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=0, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(org.apache.cassandra.db.marshal.TimeUUIDType),partitionColumns=[[] | [activity source source_elapsed thread]],partitionKeyColumns=[session_id],clusteringColumns=[event_id],keyValidator=org.apache.cassandra.db.marshal.UUIDType,columnMetadata=[activity, session_id, thread, event_id, source, source_elapsed],droppedColumns={},triggers=[],indexes=[]]], views=[], functions=[], types=[]}
+2019-05-01 09:29:09,618 INFO  [MigrationStage:1] ViewManager.java:137 reload Not submitting build tasks for views in keyspace system_traces as storage service is not initialized
+2019-05-01 09:29:09,624 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_traces.events
+2019-05-01 09:29:09,632 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_traces.sessions
+2019-05-01 09:29:09,662 INFO  [main] MigrationManager.java:351 announceNewKeyspace Create new Keyspace: KeyspaceMetadata{name=system_distributed, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.SimpleStrategy, replication_factor=3}}, tables=[org.apache.cassandra.config.CFMetaData@4220b280[cfId=759fffad-624b-3181-80ee-fa9a52d1f627,ksName=system_distributed,cfName=repair_history,flags=[COMPOUND],params=TableParams{comment=Repair history, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(org.apache.cassandra.db.marshal.TimeUUIDType),partitionColumns=[[] | [coordinator exception_message exception_stacktrace finished_at parent_id range_begin range_end started_at status participants]],partitionKeyColumns=[keyspace_name, columnfamily_name],clusteringColumns=[id],keyValidator=org.apache.cassandra.db.marshal.CompositeType(org.apache.cassandra.db.marshal.UTF8Type,org.apache.cassandra.db.marshal.UTF8Type),columnMetadata=[status, id, coordinator, finished_at, participants, exception_stacktrace, parent_id, range_end, range_begin, exception_message, keyspace_name, started_at, columnfamily_name],droppedColumns={},triggers=[],indexes=[]], org.apache.cassandra.config.CFMetaData@181413ca[cfId=deabd734-b99d-3b9c-92e5-fd92eb5abf14,ksName=system_distributed,cfName=parent_repair_history,flags=[COMPOUND],params=TableParams{comment=Repair history, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [exception_message exception_stacktrace finished_at keyspace_name started_at columnfamily_names options requested_ranges successful_ranges]],partitionKeyColumns=[parent_id],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.TimeUUIDType,columnMetadata=[requested_ranges, exception_message, keyspace_name, successful_ranges, started_at, finished_at, options, exception_stacktrace, parent_id, columnfamily_names],droppedColumns={},triggers=[],indexes=[]], org.apache.cassandra.config.CFMetaData@5cdbb130[cfId=5582b59f-8e4e-35e1-b913-3acada51eb04,ksName=system_distributed,cfName=view_build_status,flags=[COMPOUND],params=TableParams{comment=Materialized View build status, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(org.apache.cassandra.db.marshal.UUIDType),partitionColumns=[[] | [status]],partitionKeyColumns=[keyspace_name, view_name],clusteringColumns=[host_id],keyValidator=org.apache.cassandra.db.marshal.CompositeType(org.apache.cassandra.db.marshal.UTF8Type,org.apache.cassandra.db.marshal.UTF8Type),columnMetadata=[view_name, status, keyspace_name, host_id],droppedColumns={},triggers=[],indexes=[]]], views=[], functions=[], types=[]}
+2019-05-01 09:29:09,795 INFO  [MigrationStage:1] ViewManager.java:137 reload Not submitting build tasks for views in keyspace system_distributed as storage service is not initialized
+2019-05-01 09:29:09,801 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_distributed.parent_repair_history
+2019-05-01 09:29:09,807 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_distributed.repair_history
+2019-05-01 09:29:09,813 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_distributed.view_build_status
+2019-05-01 09:29:09,847 INFO  [main] StorageService.java:1487 setMode JOINING: Finish joining ring
+2019-05-01 09:29:09,956 INFO  [main] MigrationManager.java:351 announceNewKeyspace Create new Keyspace: KeyspaceMetadata{name=system_auth, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.SimpleStrategy, replication_factor=1}}, tables=[org.apache.cassandra.config.CFMetaData@1517718b[cfId=5bc52802-de25-35ed-aeab-188eecebb090,ksName=system_auth,cfName=roles,flags=[COMPOUND],params=TableParams{comment=role definitions, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=7776000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [can_login is_superuser salted_hash member_of]],partitionKeyColumns=[role],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[salted_hash, member_of, role, can_login, is_superuser],droppedColumns={},triggers=[],indexes=[]], org.apache.cassandra.config.CFMetaData@3f67073c[cfId=0ecdaa87-f8fb-3e60-88d1-74fb36fe5c0d,ksName=system_auth,cfName=role_members,flags=[COMPOUND],params=TableParams{comment=role memberships lookup table, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=7776000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(org.apache.cassandra.db.marshal.UTF8Type),partitionColumns=[[] | []],partitionKeyColumns=[role],clusteringColumns=[member],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[role, member],droppedColumns={},triggers=[],indexes=[]], org.apache.cassandra.config.CFMetaData@65c98ff0[cfId=3afbe79f-2194-31a7-add7-f5ab90d8ec9c,ksName=system_auth,cfName=role_permissions,flags=[COMPOUND],params=TableParams{comment=permissions granted to db roles, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=7776000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(org.apache.cassandra.db.marshal.UTF8Type),partitionColumns=[[] | [permissions]],partitionKeyColumns=[role],clusteringColumns=[resource],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[resource, permissions, role],droppedColumns={},triggers=[],indexes=[]], org.apache.cassandra.config.CFMetaData@7e08f0a5[cfId=5f2fbdad-91f1-3946-bd25-d5da3a5c35ec,ksName=system_auth,cfName=resource_role_permissons_index,flags=[COMPOUND],params=TableParams{comment=index of db roles with permissions granted on a resource, read_repair_chance=0.0, dclocal_read_repair_chance=0.0, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=7776000, default_time_to_live=0, memtable_flush_period_in_ms=3600000, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(org.apache.cassandra.db.marshal.UTF8Type),partitionColumns=[[] | []],partitionKeyColumns=[resource],clusteringColumns=[role],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[resource, role],droppedColumns={},triggers=[],indexes=[]]], views=[], functions=[], types=[]}
+2019-05-01 09:29:10,102 INFO  [MigrationStage:1] ViewManager.java:137 reload Not submitting build tasks for views in keyspace system_auth as storage service is not initialized
+2019-05-01 09:29:10,108 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_auth.resource_role_permissons_index
+2019-05-01 09:29:10,115 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_auth.role_members
+2019-05-01 09:29:10,122 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_auth.role_permissions
+2019-05-01 09:29:10,128 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing system_auth.roles
+2019-05-01 09:29:10,228 INFO  [main] NativeTransportService.java:75 initialize Netty using Java NIO event loop
+2019-05-01 09:29:10,269 INFO  [main] Server.java:155 start Using Netty Version: [netty-buffer=netty-buffer-4.1.16.Final.f57d8f0, netty-codec=netty-codec-4.1.16.Final.f57d8f0, netty-codec-dns=netty-codec-dns-4.1.16.Final.f57d8f0, netty-codec-haproxy=netty-codec-haproxy-4.1.16.Final.f57d8f0, netty-codec-http=netty-codec-http-4.1.16.Final.f57d8f0, netty-codec-http2=netty-codec-http2-4.1.16.Final.f57d8f0, netty-codec-memcache=netty-codec-memcache-4.1.16.Final.f57d8f0, netty-codec-mqtt=netty-codec-mqtt-4.1.16.Final.f57d8f0, netty-codec-redis=netty-codec-redis-4.1.16.Final.f57d8f0, netty-codec-smtp=netty-codec-smtp-4.1.16.Final.f57d8f0, netty-codec-socks=netty-codec-socks-4.1.16.Final.f57d8f0, netty-codec-stomp=netty-codec-stomp-4.1.16.Final.f57d8f0, netty-codec-xml=netty-codec-xml-4.1.16.Final.f57d8f0, netty-common=netty-common-4.1.16.Final.f57d8f0, netty-handler=netty-handler-4.1.16.Final.f57d8f0, netty-handler-proxy=netty-handler-proxy-4.1.16.Final.f57d8f0, netty-resolver=netty-resolver-4.1.16.Final.f57d8f0, netty-resolver-dns=netty-resolver-dns-4.1.16.Final.f57d8f0, netty-tcnative=netty-tcnative-2.0.6.Final.67f1d2d, netty-transport=netty-transport-4.1.16.Final.f57d8f0, netty-transport-native-epoll=netty-transport-native-epoll-4.1.16.Final.f57d8f0, netty-transport-native-kqueue=netty-transport-native-kqueue-4.1.16.Final.f57d8f00e1, netty-transport-native-unix-common=netty-transport-native-unix-common-4.1.16.Final.f57d8f00e1, netty-transport-rxtx=netty-transport-rxtx-4.1.16.Final.f57d8f0, netty-transport-sctp=netty-transport-sctp-4.1.16.Final.f57d8f0, netty-transport-udt=netty-transport-udt-4.1.16.Final.f57d8f0]
+2019-05-01 09:29:10,269 INFO  [main] Server.java:156 start Starting listening for CQL clients on localhost/127.0.0.1:9042 (unencrypted)...
+2019-05-01 09:29:10,280 INFO  [main] CassandraDaemon.java:564 start Not starting RPC server as requested. Use JMX (StorageService->startRPCServer()) or nodetool (enablethrift) to start it
+2019-05-01 09:29:10,290 INFO  [main] CassandraDiscovery.java:202 doStart localNode name=127.0.0.1 id=ebc0437f-bda6-451a-bacc-c7c09740cfd0 localAddress=localhost/127.0.0.1 publish_host=127.0.0.1:9300
+2019-05-01 09:29:10,292 INFO  [main] CassandraDiscovery.java:666 setSearchEnabled searchEnabled set to [true]
+2019-05-01 09:29:10,397 INFO  [main] MigrationManager.java:351 announceNewKeyspace Create new Keyspace: KeyspaceMetadata{name=elastic_admin, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.NetworkTopologyStrategy, DC1=1}}, tables=[], views=[], functions=[], types=[]}
+2019-05-01 09:29:10,479 INFO  [main] MigrationManager.java:396 announceNewColumnFamily Create new table: org.apache.cassandra.config.CFMetaData@2145c221[cfId=93588df0-6bf3-11e9-83ac-515fbfdd094d,ksName=elastic_admin,cfName=metadata,flags=[COMPOUND],params=TableParams{comment=, read_repair_chance=0.0, dclocal_read_repair_chance=0.1, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=0, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [owner version]],partitionKeyColumns=[cluster_name],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[owner, version, cluster_name],droppedColumns={},triggers=[],indexes=[]]
+2019-05-01 09:29:10,596 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing elastic_admin.metadata
+2019-05-01 09:29:10,682 INFO  [main] OutboundTcpConnection.java:108 <clinit> OutboundTcpConnection using coalescing strategy DISABLED
+2019-05-01 09:29:10,795 INFO  [HANDSHAKE-localhost/127.0.0.1] OutboundTcpConnection.java:561 lambda$handshakeVersion$1 Handshaking version with localhost/127.0.0.1
+2019-05-01 09:29:10,897 INFO  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] CassandraGatewayService.java:86 clusterStateProcessed cassandra ring block released
+2019-05-01 09:29:20,282 INFO  [OptionalTasks:1] CassandraRoleManager.java:356 setupDefaultRole Created default superuser role 'cassandra'
+2019-05-01 09:55:05,320 INFO  [Native-Transport-Requests-1] MigrationManager.java:351 announceNewKeyspace Create new Keyspace: KeyspaceMetadata{name=tweets, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.NetworkTopologyStrategy, 
+datacenter1=3}}, tables=[], views=[], functions=[], types=[]}
+2019-05-01 09:55:32,170 INFO  [Native-Transport-Requests-1] MigrationManager.java:396 announceNewColumnFamily Create new table: org.apache.cassandra.config.CFMetaData@3fa92f4b[cfId=421b72a0-6bf7-11e9-83ac-515fbfdd094d,ksName=tweets,cfName=tweet_table,flags=[COMPOUND],params=TableParams{comment=, read_repair_chance=0.0, dclocal_read_repair_chance=0.1, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=0, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [followers_count friend_count lang location retweet_count screen_name tweet]],partitionKeyColumns=[id],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[retweet_count, id, tweet, friend_count, screen_name, followers_count, location, lang],droppedColumns={},triggers=[],indexes=[]]
+2019-05-01 09:55:32,381 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing tweets.tweet_table
+2019-05-01 10:11:35,443 INFO  [Native-Transport-Requests-1] MigrationManager.java:542 announceKeyspaceDrop Drop Keyspace 'tweets'
+2019-05-01 10:14:03,906 INFO  [Native-Transport-Requests-1] MigrationManager.java:351 announceNewKeyspace Create new Keyspace: KeyspaceMetadata{name=tweets, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.SimpleStrategy, replication_factor=3}}, tables=[], views=[], functions=[], types=[]}
+2019-05-01 10:14:19,888 INFO  [Native-Transport-Requests-1] MigrationManager.java:396 announceNewColumnFamily Create new table: org.apache.cassandra.config.CFMetaData@34dc51c[cfId=e24767f0-6bf9-11e9-83ac-515fbfdd094d,ksName=tweets,cfName=tweet_table,flags=[COMPOUND],params=TableParams{comment=, read_repair_chance=0.0, dclocal_read_repair_chance=0.1, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=0, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={min_threshold=4, max_threshold=32}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [followers_count friend_count lang location retweet_count screen_name tweet]],partitionKeyColumns=[id],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[retweet_count, id, tweet, friend_count, screen_name, followers_count, location, lang],droppedColumns={},triggers=[],indexes=[]]
+2019-05-01 10:14:20,014 INFO  [MigrationStage:1] ColumnFamilyStore.java:429 <init> Initializing tweets.tweet_table
+2019-05-01 10:15:48,946 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-01 10:16:24,266 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-01 10:22:21,278 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-01 10:23:31,848 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-01 10:28:38,833 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 11:28:38,842 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 12:28:38,853 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 13:28:38,245 INFO  [CompactionExecutor:15] AutoSavingCache.java:395 saveCache Saved KeyCache (33 items) in 9 ms
+2019-05-01 13:28:38,860 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 14:28:38,866 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 15:28:38,875 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 16:28:38,885 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 17:28:38,243 INFO  [CompactionExecutor:29] AutoSavingCache.java:395 saveCache Saved KeyCache (35 items) in 6 ms
+2019-05-01 17:28:38,891 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 18:28:38,897 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 19:28:38,902 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 20:28:38,907 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 21:28:38,244 INFO  [CompactionExecutor:44] AutoSavingCache.java:395 saveCache Saved KeyCache (37 items) in 6 ms
+2019-05-01 21:28:38,916 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 22:28:38,921 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-01 23:28:38,928 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 00:28:38,934 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 01:28:38,304 INFO  [CompactionExecutor:54] AutoSavingCache.java:395 saveCache Saved KeyCache (39 items) in 66 ms
+2019-05-02 01:28:38,940 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 01:40:16,110 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:21,378 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:22,241 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:22,880 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:23,472 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:24,032 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:25,316 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:25,905 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:26,488 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:40:27,025 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:42:29,253 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 01:42:42,960 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 02:10:29,644 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] MasterService.java:684 executeTasks failed to execute cluster state update source [create-index [tweets], cause [api]]
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:10:29,647 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] BytesRestResponse.java:133 build path: /tweets, params: {index=tweets}
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:10:42,275 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] MasterService.java:684 executeTasks failed to execute cluster state update source [create-index [tweets], cause [api]]
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:10:42,276 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] BytesRestResponse.java:133 build path: /tweets, params: {index=tweets}
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:11:29,888 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] MasterService.java:684 executeTasks failed to execute cluster state update source [create-index [tweets], cause [api]]
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:11:29,888 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] BytesRestResponse.java:133 build path: /tweets, params: {index=tweets}
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:13:03,766 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] MasterService.java:684 executeTasks failed to execute cluster state update source [create-index [tweets], cause [api]]
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:13:03,766 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] BytesRestResponse.java:133 build path: /tweets, params: {index=tweets}
+org.elasticsearch.common.settings.SettingsException: Cannot create index, underlying keyspace requires the NetworkTopologyStrategy.
+	at org.elassandra.cluster.SchemaManager.createOrUpdateKeyspace(SchemaManager.java:347)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:565)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:14:14,394 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 02:20:14,476 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-02 02:23:44,962 INFO  [Native-Transport-Requests-1] MigrationManager.java:447 announceKeyspaceUpdate Update Keyspace 'tweets' From KeyspaceMetadata{name=tweets, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.SimpleStrategy, replication_factor=3}}, tables=[org.apache.cassandra.config.CFMetaData@7cbdad3a[cfId=e24767f0-6bf9-11e9-83ac-515fbfdd094d,ksName=tweets,cfName=tweet_table,flags=[COMPOUND],params=TableParams{comment=, read_repair_chance=0.0, dclocal_read_repair_chance=0.1, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=0, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={max_threshold=32, min_threshold=4}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [followers_count friend_count lang location retweet_count screen_name tweet]],partitionKeyColumns=[id],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[retweet_count, id, tweet, friend_count, screen_name, followers_count, location, lang],droppedColumns={},triggers=[],indexes=[]]], views=[], functions=[], types=[]} To KeyspaceMetadata{name=tweets, params=KeyspaceParams{durable_writes=true, replication=ReplicationParams{class=org.apache.cassandra.locator.NetworkTopologyStrategy, DC1=3}}, tables=[org.apache.cassandra.config.CFMetaData@7cbdad3a[cfId=e24767f0-6bf9-11e9-83ac-515fbfdd094d,ksName=tweets,cfName=tweet_table,flags=[COMPOUND],params=TableParams{comment=, read_repair_chance=0.0, dclocal_read_repair_chance=0.1, bloom_filter_fp_chance=0.01, crc_check_chance=1.0, gc_grace_seconds=864000, default_time_to_live=0, memtable_flush_period_in_ms=0, min_index_interval=128, max_index_interval=2048, speculative_retry=99PERCENTILE, caching={'keys' : 'ALL', 'rows_per_partition' : 'NONE'}, compaction=CompactionParams{class=org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy, options={max_threshold=32, min_threshold=4}}, compression=org.apache.cassandra.schema.CompressionParams@3a0d76b, extensions={}, cdc=false},comparator=comparator(),partitionColumns=[[] | [followers_count friend_count lang location retweet_count screen_name tweet]],partitionKeyColumns=[id],clusteringColumns=[],keyValidator=org.apache.cassandra.db.marshal.UTF8Type,columnMetadata=[retweet_count, id, tweet, friend_count, screen_name, followers_count, location, lang],droppedColumns={},triggers=[],indexes=[]]], views=[], functions=[], types=[]}
+2019-05-02 02:27:19,260 INFO  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] CassandraDiscovery.java:954 publishAsCoordinator CQL source=create-index [tweets], cause [api] SchemaChanges=[UPDATED TABLE elastic_admin.metadata]
+2019-05-02 02:27:20,011 INFO  [elasticsearch[127.0.0.1][generic][T#1]] CassandraShardStateListener.java:59 afterIndexShardStarted shard [tweets][0] started
+2019-05-02 02:28:38,944 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 02:31:21,655 WARN  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] MasterService.java:684 executeTasks failed to execute cluster state update source [create-index [tweets], cause [api]]
+org.elasticsearch.ResourceAlreadyExistsException: index [tweets/vs5Mkb4wQemDGeLmU6JZww] already exists
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validateIndexName(MetaDataCreateIndexService.java:156)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService.validate(MetaDataCreateIndexService.java:633)
+	at org.elasticsearch.cluster.metadata.MetaDataCreateIndexService$IndexCreationTask.execute(MetaDataCreateIndexService.java:295)
+	at org.elasticsearch.cluster.ClusterStateUpdateTask.execute(ClusterStateUpdateTask.java:52)
+	at org.elasticsearch.cluster.service.MasterService.executeTasks(MasterService.java:676)
+	at org.elasticsearch.cluster.service.MasterService.calculateTaskOutputs(MasterService.java:300)
+	at org.elasticsearch.cluster.service.MasterService.runTasks(MasterService.java:221)
+	at org.elasticsearch.cluster.service.MasterService$Batcher.run(MasterService.java:152)
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150)
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:573)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:244)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:207)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-05-02 02:45:16,586 INFO  [MigrationStage:1] SecondaryIndexManager.java:212 createIndex Delay initialization task for index tweets.tweet_table.elastic_tweet_table_idx
+2019-05-02 02:45:16,595 INFO  [elasticsearch[127.0.0.1][masterService#updateTask][T#1]] CassandraDiscovery.java:954 publishAsCoordinator CQL source=put-mapping[tweet_table] SchemaChanges=[UPDATED TABLE tweets.tweet_table, UPDATED TABLE tweets.tweet_table, UPDATED TABLE elastic_admin.metadata]
+2019-05-02 02:45:16,604 WARN  [MemtableFlushWriter:44] ElasticSecondaryIndex.java:2426 isIndexing No Elasticsearch index configured for tweets.tweet_table
+2019-05-02 02:45:16,612 INFO  [elasticsearch[127.0.0.1][clusterApplierService#updateTask][T#1]] ElasticSecondaryIndex.java:2556 startRebuildIfNeeded start building secondary tweets.tweet_table.elastic_tweet_table_idx
+2019-05-02 02:45:16,726 INFO  [elasticsearch[127.0.0.1][clusterApplierService#updateTask][T#1]] SecondaryIndexManager.java:570 buildIndexesBlocking Submitting index build of elastic_tweet_table_idx for data in 
+2019-05-02 02:45:16,891 INFO  [elasticsearch[127.0.0.1][clusterApplierService#updateTask][T#1]] SecondaryIndexManager.java:602 onSuccess Index build of elastic_tweet_table_idx completed
+2019-05-02 02:45:16,918 INFO  [elasticsearch[127.0.0.1][clusterApplierService#updateTask][T#1]] SecondaryIndexManager.java:645 onSuccess Index flush of elastic_tweet_table_idx completed
+2019-05-02 03:28:38,953 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 04:28:38,958 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 05:28:38,274 INFO  [CompactionExecutor:71] AutoSavingCache.java:395 saveCache Saved KeyCache (823 items) in 35 ms
+2019-05-02 05:28:38,962 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 06:28:38,967 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 07:28:38,972 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 08:28:38,976 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 09:28:38,249 INFO  [CompactionExecutor:82] AutoSavingCache.java:395 saveCache Saved KeyCache (1188 items) in 10 ms
+2019-05-02 09:28:38,979 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 10:28:38,982 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 11:28:38,986 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 12:28:38,990 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 13:28:38,248 INFO  [CompactionExecutor:92] AutoSavingCache.java:395 saveCache Saved KeyCache (1190 items) in 8 ms
+2019-05-02 13:28:38,995 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 14:28:38,998 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 15:28:39,003 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 16:28:39,007 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 17:28:38,249 INFO  [CompactionExecutor:101] AutoSavingCache.java:395 saveCache Saved KeyCache (1191 items) in 9 ms
+2019-05-02 17:28:39,010 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 18:28:39,014 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 19:28:39,017 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 20:28:39,021 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 21:28:38,264 INFO  [CompactionExecutor:108] AutoSavingCache.java:395 saveCache Saved KeyCache (1192 items) in 24 ms
+2019-05-02 21:28:39,026 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 22:28:39,032 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-02 23:28:39,036 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 00:28:39,039 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 01:28:38,249 INFO  [CompactionExecutor:114] AutoSavingCache.java:395 saveCache Saved KeyCache (1195 items) in 8 ms
+2019-05-03 01:28:39,043 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 01:49:46,972 WARN  [Native-Transport-Requests-2] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-03 02:28:39,046 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 03:28:39,049 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 04:28:39,076 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 05:28:38,251 INFO  [CompactionExecutor:145] AutoSavingCache.java:395 saveCache Saved KeyCache (1196 items) in 9 ms
+2019-05-03 05:28:39,080 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 06:28:39,084 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 07:28:39,087 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 08:28:39,090 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 09:28:38,251 INFO  [CompactionExecutor:172] AutoSavingCache.java:395 saveCache Saved KeyCache (1197 items) in 9 ms
+2019-05-03 09:28:39,094 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 10:28:39,098 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 11:28:39,101 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 12:28:39,104 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 13:28:38,316 INFO  [CompactionExecutor:180] AutoSavingCache.java:395 saveCache Saved KeyCache (1199 items) in 73 ms
+2019-05-03 13:28:39,108 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 14:28:39,111 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 15:28:39,115 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 16:28:39,121 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 17:28:38,252 INFO  [CompactionExecutor:185] AutoSavingCache.java:395 saveCache Saved KeyCache (1200 items) in 8 ms
+2019-05-03 17:28:39,127 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 18:28:39,131 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 19:28:39,134 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 20:28:39,137 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 21:28:38,320 INFO  [CompactionExecutor:195] AutoSavingCache.java:395 saveCache Saved KeyCache (1201 items) in 76 ms
+2019-05-03 21:28:39,141 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 22:28:39,144 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-03 23:28:39,147 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 00:28:39,150 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 00:42:46,765 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-04 00:59:32,144 WARN  [elasticsearch[127.0.0.1][search][T#2]] BytesRestResponse.java:133 build path: /tweets/_search, params: {index=tweets}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:274)
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:132)
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:243)
+	at org.elasticsearch.action.search.InitialSearchPhase.onShardFailure(InitialSearchPhase.java:107)
+	at org.elasticsearch.action.search.InitialSearchPhase.access$100(InitialSearchPhase.java:49)
+	at org.elasticsearch.action.search.InitialSearchPhase$2.lambda$onFailure$1(InitialSearchPhase.java:217)
+	at org.elasticsearch.action.search.InitialSearchPhase.maybeFork(InitialSearchPhase.java:171)
+	at org.elasticsearch.action.search.InitialSearchPhase.access$000(InitialSearchPhase.java:49)
+	at org.elasticsearch.action.search.InitialSearchPhase$2.onFailure(InitialSearchPhase.java:217)
+	at org.elasticsearch.action.search.SearchExecutionStatsCollector.onFailure(SearchExecutionStatsCollector.java:73)
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:51)
+	at org.elasticsearch.action.search.SearchTransportService$ConnectionCountingHandler.handleException(SearchTransportService.java:527)
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1103)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1196)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1180)
+	at org.elasticsearch.transport.TaskTransportChannel.sendResponse(TaskTransportChannel.java:66)
+	at org.elasticsearch.action.search.SearchTransportService$6$1.onFailure(SearchTransportService.java:385)
+	at org.elasticsearch.search.SearchService$2.onFailure(SearchService.java:325)
+	at org.elasticsearch.search.SearchService$2.onResponse(SearchService.java:319)
+	at org.elasticsearch.search.SearchService$2.onResponse(SearchService.java:313)
+	at org.elasticsearch.search.SearchService$3.doRun(SearchService.java:1010)
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:672)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:41)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.search.query.QueryPhaseExecutionException: Result window is too large, from + size must be less than or equal to: [10000] but was [1000000]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level setting.
+	at org.elasticsearch.search.DefaultSearchContext.preProcess(DefaultSearchContext.java:206)
+	at org.elasticsearch.search.query.QueryPhase.preProcess(QueryPhase.java:89)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:571)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:535)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:331)
+	at org.elasticsearch.search.SearchService$2.onResponse(SearchService.java:317)
+	... 9 common frames omitted
+2019-05-04 01:28:38,253 INFO  [CompactionExecutor:203] AutoSavingCache.java:395 saveCache Saved KeyCache (1203 items) in 9 ms
+2019-05-04 01:28:39,153 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 02:28:39,156 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 03:28:39,159 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 04:28:39,169 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 05:28:38,252 INFO  [CompactionExecutor:211] AutoSavingCache.java:395 saveCache Saved KeyCache (1204 items) in 7 ms
+2019-05-04 05:28:39,172 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 06:28:39,178 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 07:28:39,181 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 08:28:39,185 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 09:28:38,253 INFO  [CompactionExecutor:217] AutoSavingCache.java:395 saveCache Saved KeyCache (1205 items) in 7 ms
+2019-05-04 09:28:39,188 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 10:28:39,191 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 11:28:39,195 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 12:28:39,199 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 13:28:38,253 INFO  [CompactionExecutor:230] AutoSavingCache.java:395 saveCache Saved KeyCache (1208 items) in 7 ms
+2019-05-04 13:28:39,202 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 14:28:39,205 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 15:28:39,209 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 16:28:39,212 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 17:28:38,294 INFO  [CompactionExecutor:235] AutoSavingCache.java:395 saveCache Saved KeyCache (1209 items) in 48 ms
+2019-05-04 17:28:39,215 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 18:28:39,219 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 19:28:39,222 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 20:28:39,225 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 21:28:38,254 INFO  [CompactionExecutor:244] AutoSavingCache.java:395 saveCache Saved KeyCache (1210 items) in 7 ms
+2019-05-04 21:28:39,228 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 22:28:39,232 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-04 23:28:39,235 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 00:28:39,238 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 01:28:38,259 INFO  [CompactionExecutor:290] AutoSavingCache.java:395 saveCache Saved KeyCache (1212 items) in 12 ms
+2019-05-05 01:28:39,250 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 02:28:39,254 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 03:28:39,276 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 04:28:39,280 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 05:28:38,260 INFO  [CompactionExecutor:374] AutoSavingCache.java:395 saveCache Saved KeyCache (1213 items) in 12 ms
+2019-05-05 05:28:39,295 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 06:28:39,307 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 07:28:39,311 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 08:28:39,315 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 09:28:38,261 INFO  [CompactionExecutor:472] AutoSavingCache.java:395 saveCache Saved KeyCache (1214 items) in 12 ms
+2019-05-05 09:28:39,319 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 10:28:39,326 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 11:28:39,342 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 12:28:39,346 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 13:28:38,257 INFO  [CompactionExecutor:578] AutoSavingCache.java:395 saveCache Saved KeyCache (1216 items) in 8 ms
+2019-05-05 13:28:39,374 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 14:28:39,401 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 15:28:39,415 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 16:28:39,419 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 17:28:38,257 INFO  [CompactionExecutor:683] AutoSavingCache.java:395 saveCache Saved KeyCache (1216 items) in 8 ms
+2019-05-05 17:28:39,449 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 18:28:39,453 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 19:28:39,458 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 19:57:47,424 WARN  [Native-Transport-Requests-1] SelectStatement.java:429 warn Aggregation query used without partition key
+2019-05-05 20:28:39,467 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 21:28:38,261 INFO  [CompactionExecutor:772] AutoSavingCache.java:395 saveCache Saved KeyCache (1217 items) in 11 ms
+2019-05-05 21:28:39,471 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 22:28:39,474 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-05 23:28:39,485 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-06 00:28:39,491 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-06 01:28:38,258 INFO  [CompactionExecutor:894] AutoSavingCache.java:395 saveCache Saved KeyCache (1220 items) in 7 ms
+2019-05-06 01:28:39,495 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-06 02:28:39,510 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-06 03:28:39,525 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
+2019-05-06 04:28:39,544 INFO  [IndexSummaryManager:1] IndexSummaryRedistribution.java:77 redistributeSummaries Redistributing index summaries
