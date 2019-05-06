@@ -24,5 +24,5 @@ India is the largest democracy in the world, with an electorate of almost a bill
 
 # Presentation Link
 
-## [Project Presentation made in Latex](https://drive.google.com/open?id=1qQyRfNh-H9hprat5G03jOjyNN95JQkzB)
+## [LaTeX Project Presentation](https://drive.google.com/open?id=1qQyRfNh-H9hprat5G03jOjyNN95JQkzB)
 
