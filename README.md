@@ -2,10 +2,10 @@
 
 ## Team Buffering : Abhishek Suresh, Prajnya Satish, Rahul Aedula, Parth Anand Jawale and Soumyajyoti Bhattacharya
 
-### This project utilizes Big Data Technologies to create a web based dashboard covering The Indian General Elections in 2019 using modern big data technologies, various streaming api's and twitter data for sentiment analysis.
+### This project utilizes Big Data Technologies to create a web based dashboard covering the Indian General Elections in 2019 using modern big data technologies, various streaming APIs and twitter data for sentiment analysis.
 
 
-India is the largest democracy in the world, with a voting electorate of over a billion people. With a burgeoning economy and increasing access to fast internet connectivity, elections are often played out online as they are in the real world. While many countries have online dashboards to cover elections, provide general information and perform social media analytics to notify the population of which direction the general opinion is heading, India lacks any such forum and hence we chose to tackle that sample space by making an Indian Elections Dashboard in a scalable big data environment utilizing robust data processing and modern NLP pipelines.
+India is the largest democracy in the world, with a voting electorate of over a billion people. With a burgeoning economy and increasing access to fast internet connectivity, elections are often played out online as they are in the real world. While online dashboards to cover elections are common elsewhere, the Indian General Elections lack such a platform, and hence we chose to tackle that space by making an Indian Elections Dashboard in a scalable big data environment, utilizing robust data processing and modern NLP pipelines.
 
 
 # System Architecture
