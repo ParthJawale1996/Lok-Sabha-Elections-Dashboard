@@ -1,4 +1,4 @@
-# Project for CSCI 5214 : Big Data Architecture
+# Project for CSCI 5214: Big Data Architecture
 
 ## Team Buffering : Abhishek Suresh, Prajnya Satish, Rahul Aedula, Parth Anand Jawale and Soumyajyoti Bhattacharya
 
