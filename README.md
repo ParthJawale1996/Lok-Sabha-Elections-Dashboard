@@ -1,6 +1,6 @@
 # Project for CSCI 5214: Big Data Architecture
 
-## Team Buffering : Abhishek Suresh, Prajnya Satish, Rahul Aedula, Parth Anand Jawale and Soumyajyoti Bhattacharya
+## Team Buffering: Abhishek Suresh, Prajnya Satish, Rahul Aedula, Parth Anand Jawale and Soumyajyoti Bhattacharya
 
 ### This project utilizes Big Data Technologies to create a web based dashboard covering the Indian General Elections in 2019 using modern big data technologies, various streaming APIs and twitter data for sentiment analysis.
 
