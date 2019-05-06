@@ -10,6 +10,7 @@ India is the largest democracy in the world, with a voting electorate of over a 
 
 # System Architecture
 
+![System Architecture](/to_present/arch2/Slide1.PNG)
 
 
 
